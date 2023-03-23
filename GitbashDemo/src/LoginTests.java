@@ -13,11 +13,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseClass {
-	
-	
 	HashMap<String,String> expectedHMap= new HashMap<String,String>();
-	HashMap<String,String> actualHMap= new HashMap<String,String>();
-	
+	HashMap<String,String> actualHMap= new HashMap<String,String>();	
 	@Parameters({"username","password"})
 	@Test(description="TC_001 Login with valid creds",enabled=false,groups= {"Sanity","Regression"})
 	public void validateBooking_TC001(String username,String password)
